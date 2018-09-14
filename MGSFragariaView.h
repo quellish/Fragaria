@@ -36,6 +36,7 @@
  *  order to use MGSFragariaView.
  */
 
+IB_DESIGNABLE
 @interface MGSFragariaView : NSView
 
 
