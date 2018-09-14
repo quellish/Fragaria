@@ -191,7 +191,7 @@ IB_DESIGNABLE
 
 
 /** Specifies the color to use when highlighting the current line.*/
-@property (nonatomic, assign, nonnull) NSColor *currentLineHighlightColour;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *currentLineHighlightColour;
 /** Specifies whether or not the line with the cursor should be highlighted.*/
 @property (nonatomic, assign) BOOL highlightsCurrentLine;
 
@@ -211,11 +211,11 @@ IB_DESIGNABLE
 @property (nonatomic, assign) NSUInteger startingLineNumber;
 
 /** Specifies the standard font for the line numbers in the gutter.*/
-@property (nonatomic, assign, nonnull) NSFont *gutterFont;
+@property (nonatomic, assign, nonnull) IBInspectable NSFont *gutterFont;
 /** Specifies the standard color of the line numbers in the gutter.*/
-@property (nonatomic, assign, nonnull) NSColor *gutterTextColour;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *gutterTextColour;
 /** Specifies the background colour of the gutter view */
-@property (nonatomic, assign, nonnull) NSColor *gutterBackgroundColour;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *gutterBackgroundColour;
 
 
 #pragma mark - Showing Syntax Errors
