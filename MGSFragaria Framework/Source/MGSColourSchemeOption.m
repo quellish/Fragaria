@@ -19,4 +19,12 @@
 }
 
 
+- (instancetype)initWithSchemeFileURL:(NSURL *)file error:(NSError *__autoreleasing *)err
+{
+    self = [super initWithSchemeFileURL:file error:err];
+    _sourceFile = [file path];
+    return self;
+}
+
+
 @end
