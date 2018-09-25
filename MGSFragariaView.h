@@ -237,7 +237,7 @@ IB_DESIGNABLE
 @property (nonatomic, assign) BOOL showsIndividualErrors;
 
 /** The default syntax error line highlighting colour. */
-@property (nonatomic, assign, nonnull) NSColor *defaultSyntaxErrorHighlightingColour;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *defaultSyntaxErrorHighlightingColour;
 
 
 #pragma mark - Showing Breakpoints
@@ -313,9 +313,9 @@ IB_DESIGNABLE
 
 
 /** Indicates whether or not invisible characters in the editor are revealed.*/
-@property (nonatomic, assign) BOOL showsInvisibleCharacters;
+@property (nonatomic, assign) IBInspectable BOOL showsInvisibleCharacters;
 /** Specifies the colour to render invisible characters in the text view.*/
-@property (nonatomic, assign, nonnull) NSColor *textInvisibleCharactersColour;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *textInvisibleCharactersColour;
 
 /**
  *  Clears the current substitutes for invisible characters
@@ -337,11 +337,11 @@ IB_DESIGNABLE
 
 
 /** Indicates the base (non-highlighted) text color.*/
-@property (copy, nonnull) NSColor *textColor;
+@property (copy, nonnull) IBInspectable NSColor *textColor;
 /** Indicates the text view background color.*/
-@property (nonnull) NSColor *backgroundColor;
+@property (nonnull) IBInspectable NSColor *backgroundColor;
 /** Specifies the text editor font.*/
-@property (nonatomic, nonnull) NSFont *textFont;
+@property (nonatomic, nonnull) IBInspectable NSFont *textFont;
 /** The real line height as a multiple of the natural line height for the
  *  current font. */
 @property (nonatomic) CGFloat lineHeightMultiple;
@@ -358,7 +358,7 @@ IB_DESIGNABLE
 /** Indicates whether or not the vertical scroller should be displayed.*/
 @property (nonatomic, assign) BOOL hasVerticalScroller;
 /** Indicates the color of the insertion point.*/
-@property (nonatomic, assign, nonnull) NSColor *insertionPointColor;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *insertionPointColor;
 /** Indicates whether or not the "rubber band" effect is disabled.*/
 @property (nonatomic, assign) BOOL scrollElasticityDisabled;
 
@@ -374,31 +374,31 @@ IB_DESIGNABLE
 
 
 /** Specifies the autocomplete color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForAutocomplete;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForAutocomplete;
 
 /** Specifies the attributes color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForAttributes;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForAttributes;
 
 /** Specifies the commands color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForCommands;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForCommands;
 
 /** Specifies the comments color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForComments;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForComments;
 
 /** Specifies the instructions color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForInstructions;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForInstructions;
 
 /** Specifies the keywords color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForKeywords;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForKeywords;
 
 /** Specifies the numbers color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForNumbers;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForNumbers;
 
 /** Specifies the strings color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForStrings;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForStrings;
 
 /** Specifies the variables color **/
-@property (nonatomic, assign, nonnull) NSColor *colourForVariables;
+@property (nonatomic, assign, nonnull) IBInspectable NSColor *colourForVariables;
 
 
 #pragma mark - Syntax Highlighter Colouring Options
